@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeStep | Results</title>
+  <style>
+    body { font-family: 'Helvetica Neue', sans-serif; margin: 40px; background-color: #fafafa; color: #222; line-height: 1.6; }
+    h1, h2 { color: #1a3a6b; }
+    .image-placeholder { border: 2px dashed #ccc; padding: 60px; text-align: center; margin: 30px 0; color: #777; }
+    .next { text-align: right; margin-top: 40px; }
+    a { color: #1a3a6b; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Visualizations & Results</h1>
+  <p>
+    The AlexNet model achieved a strong early-stage baseline, demonstrating quick convergence with
+    over <strong>96% training accuracy</strong> and up to <strong>83% validation accuracy</strong> across five epochs.
+  </p>
+
+  <div class="image-placeholder">[Insert training/validation accuracy plots from Weights & Biases]</div>
+  <div class="image-placeholder">[Insert confusion matrix or classification report]</div>
+
+  <p>
+    The results show high accuracy with potential overfitting during later epochs — suggesting the need for larger datasets,
+    stronger regularization, or advanced augmentation for production-ready performance.
+  </p>
+
+  <div class="next"><a href="takeaways.html">Next → Takeaways</a></div>
+</body>
+</html>
