@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeStep | Takeaways</title>
+  <style>
+    body { font-family: 'Helvetica Neue', sans-serif; margin: 40px; background-color: #fafafa; color: #222; line-height: 1.6; }
+    h1, h2 { color: #1a3a6b; }
+    .image-placeholder { border: 2px dashed #ccc; padding: 60px; text-align: center; margin: 30px 0; color: #777; }
+    a { color: #1a3a6b; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Takeaways</h1>
+  <p>
+    SafeStep demonstrates that deep learning can play a crucial role in saving lives by identifying hidden explosives
+    using wearable, low-power systems. While this early prototype shows strong results, additional data and field validation
+    are needed for real-world deployment.
+  </p>
+
+  <h2>Future Work</h2>
+  <ul>
+    <li>Expand dataset with real-world imagery and environmental diversity.</li>
+    <li>Deploy model to edge devices or microcontrollers for real-time detection.</li>
+    <li>Integrate multispectral sensors for higher accuracy.</li>
+  </ul>
+
+  <div class="image-placeholder">[Insert project logo or team photo]</div>
+
+  <p><a href="index.html">← Back to Start</a></p>
+</body>
+</html>
