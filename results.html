@@ -2,34 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SafeStep | Results</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Results</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>SafeStep Project</header>
-  <nav>
-    <a href="index.html">Problem</a>
-    <a href="technical.html">Technical Approach</a>
-    <a href="results.html">Results</a>
-    <a href="takeaways.html">Takeaways</a>
-  </nav>
-  <main>
-    <section>
-      <h1>Results & Visualizations</h1>
-      <p>The model achieved strong early performance with rapid convergence. Validation accuracy improved as augmentation and tuning were applied.</p>
-      <ul>
-        <li><b>Training Accuracy:</b> ~100%</li>
-        <li><b>Validation Accuracy:</b> ~83%</li>
-        <li><b>Training Loss:</b> 0.0017</li>
-      </ul>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="technical.html">Technical Approach</a>
+  <a href="results.html">Results</a>
+  <a href="discussion.html">Discussion</a>
+  <a href="acknowledgements.html">Acknowledgements</a>
+</nav>
+<div class="container">
+  <h1>Results</h1>
 
-      <h2>Experiment Summary</h2>
-      <p>We tested 7 experiment variations, including augmentation, optimizer types, and learning rate adjustments to evaluate performance tradeoffs.</p>
+  <h2>AlexNet Performance</h2>
+  <img src="images/alexnet_training_loss.png" alt="AlexNet Training Loss">
+  <figcaption>Fig. 4: AlexNet Training and Validation Loss</figcaption>
+  <img src="images/alexnet_confusion_matrix.png" alt="AlexNet Confusion Matrix">
+  <figcaption>Fig. 5: AlexNet Confusion Matrix</figcaption>
 
-      <img class="placeholder" alt="Accuracy plot placeholder" src="">
-      <img class="placeholder" alt="Loss curve placeholder" src="">
-    </section>
-  </main>
-  <footer>© 2025 SafeStep Project | EFSC AI Team</footer>
+  <h2>ResNet18 Performance</h2>
+  <img src="images/resnet18_training_loss.png" alt="ResNet18 Training Loss">
+  <figcaption>Fig. 6: ResNet18 Training and Validation Loss</figcaption>
+  <img src="images/resnet18_confusion_matrix.png" alt="ResNet18 Confusion Matrix">
+  <figcaption>Fig. 7: ResNet18 Confusion Matrix</figcaption>
+
+  <h2>Performance Comparison</h2>
+  <table>
+    <tr>
+      <th>Model</th>
+      <th>Accuracy</th>
+      <th>Precision</th>
+      <th>Recall</th>
+      <th>F1-Score</th>
+    </tr>
+    <tr>
+      <td>AlexNet</td>
+      <td>0.92</td>
+      <td>0.91</td>
+      <td>0.90</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>ResNet18</td>
+      <td>0.95</td>
+      <td>0.94</td>
+      <td>0.95</td>
+      <td>0.95</td>
+    </tr>
+  </table>
+</div>
 </body>
 </html>
