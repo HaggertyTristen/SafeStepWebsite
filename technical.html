@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SafeStep | Technical Approach</title>
-  <style>
-    body { font-family: 'Helvetica Neue', sans-serif; margin: 40px; background-color: #fafafa; color: #222; line-height: 1.6; }
-    h1, h2 { color: #1a3a6b; }
-    .image-placeholder { border: 2px dashed #ccc; padding: 60px; text-align: center; margin: 30px 0; color: #777; }
-    .next { text-align: right; margin-top: 40px; }
-    a { color: #1a3a6b; text-decoration: none; font-weight: bold; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Approach | SafeStep</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Technical Approach</h1>
-  <h2>Model Architecture</h2>
-  <p>
-    SafeStep utilizes <strong>AlexNet</strong>, a convolutional neural network (CNN) designed to classify and detect patterns within image data.
-    The model processes aerial or ground-level images, distinguishing between “safe” and “mine” zones.
-  </p>
-  <ul>
-    <li><strong>Input:</strong> 224×224 color images</li>
-    <li><strong>Layers:</strong> Convolution → ReLU → Pooling → Fully Connected</li>
-    <li><strong>Output:</strong> Binary classification (Mine / Safe)</li>
-  </ul>
+  <header>
+    <h1>Technical Approach</h1>
+    <h2>Using AlexNet for Landmine Detection</h2>
+  </header>
 
-  <div class="image-placeholder">[Insert diagram of AlexNet architecture]</div>
+  <section>
+    <h3>Architecture Overview</h3>
+    <p>
+      SafeStep uses a modified version of <strong>AlexNet</strong>, a deep convolutional neural network (CNN)
+      originally designed for large-scale image recognition. We fine-tuned AlexNet to classify terrain images
+      as <strong>Safe</strong> or <strong>Mine</strong>.
+    </p>
+  </section>
 
-  <h2>Training Process</h2>
-  <p>
-    Training data was split into <strong>80 training images</strong> and <strong>6 validation images</strong>, organized in separate class folders.
-    Data augmentation, normalization, and resizing ensured balanced learning. The model was trained for five epochs using the Adam optimizer,
-    categorical cross-entropy loss, and learning rate tuning for optimal accuracy.
-  </p>
+  <section>
+    <h3>Process Summary</h3>
+    <ul>
+      <li>Input images from camera sensors (224x224)</li>
+      <li>Convolution + ReLU activation layers extract visual features</li>
+      <li>Pooling layers reduce noise and focus on key patterns</li>
+      <li>Fully connected layers classify terrain safety</li>
+      <li>Output: Probability of mine presence beneath the next step</li>
+    </ul>
+  </section>
 
-  <div class="next"><a href="results.html">Next → Visualizations & Results</a></div>
+  <section>
+    <h3>Training Setup</h3>
+    <p>
+      Model trained in PyTorch on labeled data from Google Drive with “safe” and “mine” categories. 
+      Optimized with Adam optimizer, learning rate = 0.001, batch size = 16, for 5 epochs.
+    </p>
+  </section>
+
+  <footer>
+    <p><a href="index.html">← Back to Home</a></p>
+  </footer>
 </body>
 </html>
