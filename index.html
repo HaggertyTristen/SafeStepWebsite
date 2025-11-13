@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SafeStep | Problem Overview</title>
+  <title>SafeStep | Technical Approach</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,16 +15,22 @@
   </nav>
   <main>
     <section>
-      <h1>Problem & Motivation</h1>
-      <p><strong>SafeStep</strong> is an AI-powered solution designed to detect wet or slippery surfaces in real time using image classification. 
-      This can help reduce accidents and improve safety in public and private spaces like hospitals, malls, and workplaces.</p>
+      <h1>Technical Approach</h1>
+      <p>We used a modified <b>AlexNet</b> convolutional neural network for classification. The network accepts 224x224 RGB images, processes them through five convolutional layers, and classifies outputs as <em>Safe</em> or <em>Wet</em>.</p>
+      
+      <h2>Training Process</h2>
+      <ul>
+        <li>Preprocessing: resized, normalized images</li>
+        <li>Loss function: CrossEntropyLoss</li>
+        <li>Optimizer: Adam (learning rate 1e-4)</li>
+        <li>Batch size: 16</li>
+        <li>Epochs: 5</li>
+      </ul>
 
-      <p>Slips and falls account for millions of injuries annually. By automating detection using a trained CNN (AlexNet), we aim to give environments a “smart safety check.”</p>
+      <h2>Implementation Environment</h2>
+      <p>Trained in Google Colab using GPU acceleration. The dataset was stored on Google Drive for easy access and reproducibility.</p>
 
-      <h2>Dataset</h2>
-      <p>Our dataset consists of two primary classes: <b>Safe</b> (dry) and <b>Mine</b> (wet/slippery). Images are separated into train and test folders for model evaluation.</p>
-
-      <img class="placeholder" alt="Dataset sample placeholder" src="">
+      <img class="placeholder" alt="Model architecture placeholder" src="">
     </section>
   </main>
   <footer>© 2025 SafeStep Project | EFSC AI Team</footer>
