@@ -2,37 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SafeStep | Technical Approach</title>
-  <link rel="stylesheet" href="style.css">
+  <title>SafeStep: Landmine Detection</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>SafeStep Project</header>
-  <nav>
-    <a href="index.html">Problem</a>
-    <a href="technical.html">Technical Approach</a>
-    <a href="results.html">Results</a>
-    <a href="takeaways.html">Takeaways</a>
-  </nav>
-  <main>
-    <section>
-      <h1>Technical Approach</h1>
-      <p>We used a modified <b>AlexNet</b> convolutional neural network for classification. The network accepts 224x224 RGB images, processes them through five convolutional layers, and classifies outputs as <em>Safe</em> or <em>Wet</em>.</p>
-      
-      <h2>Training Process</h2>
-      <ul>
-        <li>Preprocessing: resized, normalized images</li>
-        <li>Loss function: CrossEntropyLoss</li>
-        <li>Optimizer: Adam (learning rate 1e-4)</li>
-        <li>Batch size: 16</li>
-        <li>Epochs: 5</li>
-      </ul>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="technical.html">Technical Approach</a>
+  <a href="results.html">Results</a>
+  <a href="discussion.html">Discussion</a>
+  <a href="acknowledgements.html">Acknowledgements</a>
+</nav>
+<div class="container">
+  <h1>SafeStep: AI-Powered Landmine Detection</h1>
+  <p>Landmines remain a significant humanitarian threat worldwide, causing injuries and fatalities every year. SafeStep leverages deep learning to classify terrain as “mine” or “safe,” offering a safer and more efficient detection method.</p>
+  <img src="images/landmine_terrain.jpg" alt="Aerial view of landmine-affected terrain">
+  <figcaption>Fig. 1: Example of landmine-affected terrain</figcaption>
 
-      <h2>Implementation Environment</h2>
-      <p>Trained in Google Colab using GPU acceleration. The dataset was stored on Google Drive for easy access and reproducibility.</p>
-
-      <img class="placeholder" alt="Model architecture placeholder" src="">
-    </section>
-  </main>
-  <footer>© 2025 SafeStep Project | EFSC AI Team</footer>
+  <h2>Key Motivations</h2>
+  <ul>
+    <li>Prevent civilian injuries and fatalities.</li>
+    <li>Enable faster, safer landmine detection.</li>
+    <li>Leverage AI to reduce human risk.</li>
+  </ul>
+</div>
 </body>
 </html>
