@@ -5,23 +5,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SafeStep | Visualizations</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #F5F5DC; /* tan/earthy background */
+      color: #333; /* dark text */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #556B2F; /* earthy green header */
+      color: #fff;
+      padding: 30px 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #2E8B57; /* darker green for section titles */
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #556B2F;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #8B4513; /* brown/earthy border */
+      max-width: 90%;
+    }
+
+    footer {
+      background-color: #556B2F;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #ADD8E6; /* light blue link */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Model Training Visualizations</h1>
+    <h1>SafeStep Model Training Visualizations</h1>
   </header>
 
   <main>
     <section>
       <h2>Training & Validation Metrics</h2>
-<h3>Training Accuracy</h3>
-<img src="images/train_acc.png" alt="Training Accuracy Chart">
 
-<h3>Validation Accuracy</h3>
-<img src="images/val_acc.png" alt="Validation Accuracy Chart">
+      <h3>Training Accuracy</h3>
+      <img src="images/train_acc.png" alt="Training Accuracy Chart">
 
-<h3>Validation Loss</h3>
-<img src="images/val_loss.png" alt="Validation Loss Chart">
+      <h3>Validation Accuracy</h3>
+      <img src="images/val_acc.png" alt="Validation Accuracy Chart">
+
+      <h3>Validation Loss</h3>
+      <img src="images/val_loss.png" alt="Validation Loss Chart">
     </section>
   </main>
 
