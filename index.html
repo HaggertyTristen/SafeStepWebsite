@@ -3,32 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SafeStep | AI-Powered Landmine Detection</title>
+  <title>SafeStep | Home</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #F5F5DC; /* tan/earthy background */
+      color: #333;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #556B2F; /* earthy green */
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .hero {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 90%;
+      max-width: 1200px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #8B4513; /* brown border */
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #2E8B57; /* darker green */
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #556B2F;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #ADD8E6; /* light blue */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      background-color: #2E8B57;
+      color: #fff;
+      padding: 12px 25px;
+      margin: 5px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #556B2F;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>SafeStep: AI-Powered Landmine Detection System</h1>
-    <nav>
-      <a href="problem.html">Problem</a>
-      <a href="technical.html">Technical Approach</a>
-      <a href="visualizations.html">Visualizations</a>
-      <a href="results.html">Results</a>
-      <a href="takeaways.html">Takeaways</a>
-    </nav>
+    <h1>SafeStep: AI-Powered Landmine Detection</h1>
   </header>
 
+  <section class="hero">
+    <img src="images/safestep_banner.png" alt="SafeStep Concept Illustration">
+    <p style="font-style:italic; color:#555; margin-top:10px;">Illustration of the SafeStep AI-powered wearable mine detection system.</p>
+  </section>
+
   <main>
-    <section>
-      <p>
-        SafeStep is a wearable AI system integrated into smart boots and ankle devices, using computer vision and deep learning to detect landmines before an operator steps on them. 
-        It provides instant haptic and visual alerts to protect personnel in dangerous environments.
-      </p>
-    </section>
+    <h2>About SafeStep</h2>
+    <p>SafeStep is a wearable AI detection system integrated into smart boots and ankle devices. Using computer vision and deep learning with AlexNet, SafeStep identifies mines before your next step, delivering instant vibration and visual alerts to keep operators safe.</p>
+    
+    <p>Over 60 countries remain contaminated by landmines. Current detection methods are slow and dangerous. SafeStep dramatically accelerates detection while reducing field casualties, supporting both military EOD units and humanitarian demining operations.</p>
+
+    <div class="buttons">
+      <a href="visualizations.html">View Model Visualizations</a>
+      <a href="technical.html">Technical Approach</a>
+      <a href="results.html">Results & Takeaways</a>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Tristen Haggerty – Florida Atlantic University</p>
+    <a href="index.html">Back to Home</a>
   </footer>
+
 </body>
 </html>
