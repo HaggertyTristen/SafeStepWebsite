@@ -32,12 +32,19 @@
     }
 
     .hero img {
-      width: 90%;
-      max-width: 1200px;
+      width: 60%;        /* smaller width */
+      max-width: 600px;  /* cap max width */
       height: auto;
       object-fit: cover;
       border-radius: 10px;
       border: 2px solid #8B4513; /* brown border */
+    }
+
+    .hero p {
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+      font-size: 0.9em; /* smaller caption */
     }
 
     main {
@@ -105,7 +112,7 @@
 
   <section class="hero">
     <img src="images/safestep_banner.png" alt="SafeStep Concept Illustration">
-    <p style="font-style:italic; color:#555; margin-top:10px;">Illustration of the SafeStep AI-powered wearable mine detection system.</p>
+    <p>Illustration of the SafeStep AI-powered wearable mine detection system.</p>
   </section>
 
   <main>
